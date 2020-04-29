@@ -24,7 +24,7 @@ GENERAL INFORMATION
 
 SHARING/ACCESS INFORMATION
 
-1. Licenses/restrictions placed on the data: please cite the data as Porcher, Simon "A novel dataset on governments' responses to COVID-19 all around the world", chaire eppp discussion paper 2020-02.
+1. Licenses/restrictions placed on the data: please cite the data as Porcher, Simon "A novel dataset on governments' responses to COVID-19 all around the world", chaire eppp discussion paper 2020-03.
 
 2. Links to publications that cite or use the data: 
 

@@ -1,4 +1,4 @@
-Governments’ responses to COVID-19 - Dataset
+GOVERNMENTS' RESPONSES TO COVID-19 - DATASET
 
 This PORCHER_GOVCOVID19_Readme.txt file was first generated on 2020-04-20 by Simon PORCHER. A modified version is generated on 2020-05-04. 
 

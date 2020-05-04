@@ -1,6 +1,6 @@
 GOVERNMENTS' RESPONSES TO COVID-19 - DATASET
 
-This PORCHER_GOVCOVID19_Readme.txt file was first generated on 2020-04-20 by Simon PORCHER. A modified version is generated on 2020-05-04. 
+Last update: 2020-05-04. 
 
 The dataset tracks governments’ responses to COVID-19 all around the world. The dataset is at the country-level and covers the January-April 2020 period. It tracks 17 measures – 10 public health measures and 7 economic measures – taken by 228 governments. The tracking of the measures allows creating an index of the rigidity of public health measures and an index of economic response to the pandemic. The objective of the dataset is both to inform citizens and to help researchers and governments in fighting the pandemic. 
 The dataset can be downloaded and used freely. Please properly cite the name of the dataset (“Governments’ Responses to COVID-19”) and the reference: Porcher, Simon "A novel dataset on governments' responses to COVID-19 all around the world", Chaire EPPP 2020-03 discussion paper, 2020. 

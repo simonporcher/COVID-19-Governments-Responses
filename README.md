@@ -1,15 +1,18 @@
-GOVERNMENTS' RESPONSES TO COVID-19 - DATASET
+# GOVERNMENTS' RESPONSES TO COVID-19 - DATASET
 
 Last update: 2020-05-04. 
 
 The dataset tracks governments’ responses to COVID-19 all around the world. The dataset is at the country-level and covers the January-April 2020 period. It tracks 17 measures – 10 public health measures and 7 economic measures – taken by 228 governments. The tracking of the measures allows creating an index of the rigidity of public health measures and an index of economic response to the pandemic. The objective of the dataset is both to inform citizens and to help researchers and governments in fighting the pandemic. 
+
 The dataset can be downloaded and used freely. Please properly cite the name of the dataset (“Governments’ Responses to COVID-19”) and the reference: Porcher, Simon "A novel dataset of governments' responses to COVID-19 all around the world", Chaire EPPP 2020-03 discussion paper, 2020. 
 
-GENERAL INFORMATION
+## GENERAL INFORMATION
 
-1.	Title of Dataset: Governments' Responses to COVID-19
+#### 1.	Title of Dataset: 
 
-2.	Author Information
+Governments' Responses to COVID-19
+
+#### 2.	Authors Information
 
 The principal investigator is Simon Porcher. 	
 Contact:
@@ -19,58 +22,69 @@ porcher.iae@univ-paris1.fr
 
 Research assistants: Lorena Demichelis (v1), Léa Reville (v2). 
 
-3.	 Date of data collection: 2020-03-16 to 2020-04-29.
+#### 3.	Date of data collection: 2020-03-16 to 2020-04-29.
 
-4.	Geographic location of data collection: Paris, France.  
+#### 4.	Geographic location of data collection: Paris, France.  
 
-5.	Information about funding sources that supported the collection of the data: No funding. 
+#### 5.	Information about funding sources that supported the collection of the data: No funding. 
 
-SHARING/ACCESS INFORMATION
+## SHARING/ACCESS INFORMATION
 
-1.	Licenses/restrictions placed on the data: please cite the data as Porcher, Simon "A novel dataset of governments' responses to COVID-19 all around the world", Chaire EPPP discussion paper 2020-03. Link: https://www.chaire-eppp.org/documents-de-travail-publications/
+#### 1.	Licenses/restrictions placed on the data: 
 
-2.	Links to publications that cite or use the data: 
-https://www.chaire-eppp.org/contagion-the-determinants-of-governments-public-health-responses-to-covid-19-all-around-the-world/
+The dataset can be used for free. Please properly acknowledge the author's name, name of the dataset and the paper presenting the data as Porcher, Simon "A novel dataset of governments' responses to COVID-19 all around the world", Chaire EPPP discussion paper 2020-03. Link: https://www.chaire-eppp.org/a-novel-dataset-of-governments-responses-to-covid-19-all-around-the-world/
 
-3.	Links to other publicly accessible locations of the data: https://www.openicpsr.org/openicpsr/project/119061/version/V2/view
+#### 2.	Links to other publicly accessible locations of the data: https://www.openicpsr.org/openicpsr/project/119061/version/V2/view
 
-4.	The data is derived from the following sources: 
+#### 3.	The data is derived from the following sources: 
+
 The coding of public health measures is based on cross-country information reported by the Assessment Capacities Project (ACAPS; https://www.acaps.org/covid19-government-measures-dataset), the International Institute for Democracy and Electoral Assistance (IDEA; https://www.idea.int/publications/catalogue/elections-and-covid-19) for elections and the United Nations Educational Scientific and Cultural Organization (UNESCO; https://en.unesco.org/covid19/educationresponse) for schools closures. For economic measures, the information comes from the IMF (https://www.imf.org/en/Topics/imf-and-covid19/Policy-Responses-to-COVID-19) and the International Growth Centre (https://www.theigc.org/covid-19/).
 
-Detailed country-level sources are  reported here: Gov_Responses_Sources.xls.
+Detailed country-level sources are  reported here: https://github.com/simonporcher/COVID-19-Governments-Responses/blob/master/Gov_Responses_Sources.xlsx
 
-5.	Cite the dataset as Porcher, Simon "A novel dataset of governments' responses to COVID-19 all around the world", Chaire EPPP 2020-03 discussion paper, 2020.
+#### 5.	Cite the dataset as Porcher, Simon "A novel dataset of governments' responses to COVID-19 all around the world", Chaire EPPP discussion paper 2020-03, 2020.
 
-DATA & FILE OVERVIEW
+## DATA & FILE OVERVIEW
 
-1.	File List: 
+#### 1.	File List: 
 Gov_Responses_Covid19_02May.dta, Stata file
 Gov_Responses_Covid19_02May.xls, Excel file
 Gov_Responses_Sources.xls, Excel file
+verif.do, do-file Stata correcting mistakes from the first version
 
-2.	The updated file is the version of May 04, 2020. Updated version will be uploaded on a bi-monthly basis.
+#### 2.	Last update:
 
-METHODOLOGICAL INFORMATION
+The updated file is the version of May 04, 2020. Updated version will be uploaded on a bi-monthly basis.
 
-1.	Description of methods used for collection/generation of data: 
+## METHODOLOGICAL INFORMATION
+
+#### 1.	Description of methods used for collection/generation of data: 
+
 Data coding is detailed in Porcher, Simon "A novel dataset of governments’ responses to COVID-19 all around the world", Chaire EPPP discussion paper 2020-03, 2020. 
 
-2.	Methods for processing the data: 
+#### 2.	Methods for processing the data: 
+
 For all measures, dataset is coded by hand. UNESCO data is merged with our dataset. More information can be found in Porcher, Simon "A novel dataset of governments’ responses to COVID-19 all around the world", Chaire EPPP discussion paper 2020-03, 2020. 
 
-3.	Instrument- or software-specific information needed to interpret the data: 
-Data is coded in Excel and modified in Stata 14 for PC. 
+#### 3.	Softwares used to collect the data: 
 
-4.	People involved with sample collection, processing, analysis and/or submission: 
+Data was first coded in Excel and then modified in Stata 14 for PC. 
+
+#### 4.	People involved with sample collection, processing, analysis and/or submission: 
+
 Simon Porcher (principal investigator). Verifications by: Lorena Demichelis, Léa Réville. 
 
-DATA-SPECIFIC INFORMATION FOR: Gov_Responses_Covid19_02May.dta
+## DATA-SPECIFIC INFORMATION FOR: Gov_Responses_Covid19_02May.dta
 
-1.	Number of variables: 34
+#### 1.	Number of variables: 
 
-2.	Number of cases/rows: 14,601 observations; 228 countries. 
+34
 
-3.	Variables List: 
+#### 2.	Number of cases/rows: 
+
+14,601 observations; 228 countries. 
+
+#### 3.	Variables List: 
 
 - country: name of the country or the territory;
 - iso: three-letters country code;
@@ -106,9 +120,11 @@ DATA-SPECIFIC INFORMATION FOR: Gov_Responses_Covid19_02May.dta
 - Economic_Measures: average of the coded economic measures. 
 
 
-4.	Missing data codes: "."
+#### 4.	Missing data codes: 
 
-5.	Miscellaneous: 
+Missing variables, e.g. when the country was not covered by our sources, are flagshiped with a gap ("." in Stata, empty cell in Excel).
 
-The dataset is based on manual recording of policy measures implemented all around the world. Even though we made the best attempt to report data as accurately as possible, there might be some remaining errors and we apologize in advance for that. Please email the corresponding author if you wish to point some errors or leave a message on the GitHub repository. 
+#### 5.	Miscellaneous: 
+
+The dataset is mainly based on manual recording of policy measures implemented all around the world. Even though we made the best attempt to report data as accurately as possible, there might be some remaining errors and we apologize in advance for that. Please email the corresponding author if you wish to point some errors or leave a message on the GitHub repository. 
 

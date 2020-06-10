@@ -1,10 +1,11 @@
 # GOVERNMENTS' RESPONSES TO COVID-19 - DATASET
 
-Last update: 2020-05-04. 
+Last update: 2020-06-04. 
 
-The dataset tracks governments’ responses to COVID-19 all around the world. The dataset is at the country-level and covers the January-April 2020 period. It tracks 17 measures – 10 public health measures and 7 economic measures – taken by 228 governments. The tracking of the measures allows creating an index of the rigidity of public health measures and an index of economic response to the pandemic. The objective of the dataset is both to inform citizens and to help researchers and governments in fighting the pandemic. 
+The dataset tracks governments’ responses to COVID-19 all around the world. The dataset is at the country-level and covers the January-May 2020 period. It tracks 19 measures – 12 public health measures and 7 economic measures – taken by 229 governments. The tracking of the measures allows creating an index of the rigidity of public health measures and an index of economic response to the pandemic. The objective of the dataset is both to inform citizens and to help researchers and governments in fighting the pandemic.
 
-The dataset can be downloaded and used freely. Please properly cite the name of the dataset (“Governments’ Responses to COVID-19”) and the reference: Porcher, Simon "A novel dataset of governments' responses to COVID-19 all around the world", Chaire EPPP 2020-03 discussion paper, 2020. 
+The dataset can be downloaded and used freely. Please properly cite the name of the dataset (“Governments’ Responses to COVID-19”) and the reference: Porcher, Simon "A novel dataset of governments' responses to COVID-19 all around the world", Chaire EPPP 2020-03 discussion paper, 2020.
+
 
 ## GENERAL INFORMATION
 
@@ -20,9 +21,9 @@ IAE Paris / Sorbonne Business School
 8 bis rue Croix de Jarry 75013 Paris France
 porcher.iae@univ-paris1.fr
 
-Research assistants: Lorena Demichelis (v1), Léa Reville (v2). 
+Research assistants: Lorena Demichelis (v1 and v3), Léa Reville (v2 and v3), Aziz Goumiri (v3). 
 
-#### 3.	Date of data collection: 2020-03-16 to 2020-04-29.
+#### 3.	Date of data collection: 2020-03-16 to 2020-05-27.
 
 #### 4.	Geographic location of data collection: Paris, France.  
 
@@ -34,7 +35,7 @@ Research assistants: Lorena Demichelis (v1), Léa Reville (v2).
 
 The dataset can be used for free. Please properly acknowledge the author's name, name of the dataset and the paper presenting the data as Porcher, Simon "A novel dataset of governments' responses to COVID-19 all around the world", Chaire EPPP discussion paper 2020-03. Link: https://www.chaire-eppp.org/a-novel-dataset-of-governments-responses-to-covid-19-all-around-the-world/
 
-#### 2.	Links to other publicly accessible locations of the data: https://www.openicpsr.org/openicpsr/project/119061/version/V2/view
+#### 2.	Links to other publicly accessible locations of the data: https://www.openicpsr.org/openicpsr/project/119061/version/V4/view
 
 #### 3.	The data is derived from the following sources: 
 
@@ -47,14 +48,14 @@ Detailed country-level sources are  reported here: https://github.com/simonporch
 ## DATA & FILE OVERVIEW
 
 #### 1.	File List: 
-Gov_Responses_Covid19_02May.dta, Stata file
-Gov_Responses_Covid19_02May.xls, Excel file
+Gov_Responses_Covid19_04Jun.dta, Stata file
+Gov_Responses_Covid19_02Jun.xls, Excel file
 Gov_Responses_Sources.xls, Excel file
-verif.do, do-file Stata correcting mistakes from the first version
+verif.do, Stata do-file updating the dataset from the first version
 
 #### 2.	Last update:
 
-The updated file is the version of May 04, 2020. Updated version will be uploaded on a bi-monthly basis.
+The updated file is the version of June 04, 2020. Updated version will be uploaded on a monthly basis.
 
 ## METHODOLOGICAL INFORMATION
 
@@ -72,17 +73,17 @@ Data was first coded in Excel and then modified in Stata 14 for PC.
 
 #### 4.	People involved with sample collection, processing, analysis and/or submission: 
 
-Simon Porcher (principal investigator). Verifications by: Lorena Demichelis, Léa Réville. 
+Simon Porcher (principal investigator). Verifications by: Lorena Demichelis, Léa Réville, Aziz Goumiri.
 
 ## DATA-SPECIFIC INFORMATION FOR: Gov_Responses_Covid19_02May.dta
 
 #### 1.	Number of variables: 
 
-34
+39.
 
 #### 2.	Number of cases/rows: 
 
-14,601 observations; 228 countries. 
+34,121 observations; 229 countries. 
 
 #### 3.	Variables List: 
 
@@ -97,6 +98,10 @@ Simon Porcher (principal investigator). Verifications by: Lorena Demichelis, Lé
 - domestic_local: binary variable to distinguish localized domestic lockdowns from other cases. 1 denotes that domestic lockdowns were implemented at the local level and 0 means that domestic lockdowns were not implemented at the local-level (either at the national level or not implemented). The nature of the domestic lockdown is based on our reading of the measures reported by the ACAPS. The interaction of domestic and domestic_local allows researchers to create three levels of measures: no domestic lockdown (domestic=0 and domestic_local=0), localized domestic lockdowns (domestic=1 and domestic_local=1) or national domestic lockdowns (domestic=1 and domestic_local=0);
 - travel: binary variable equal to1 if travel restrictions were implemented and 0 otherwise;
 - travel_partial: binary flag to differentiate partial travel restrictions from other cases. 1 denotes that travel restrictions were partial and 0 denotes that travel restrictions were not partial (either strict or not implemented). The nature of the travel restrictions is based on our reading of the measures reported by the ACAPS. The interaction of travel and travel_partial allows researchers to create three levels of measures: no travel restrictions (travel=0 and travel_partial=0), partial travel restrictions (travel=1 and travel_partial=1) or strict travel restrictions (travel=1 and travel_partial=0);
+-	travel_dom: binary variable equal to1 if travel restrictions within the country  (e.g. inter-region travels) were implemented and 0 otherwise;
+-	travel_dom_partial: binary flag to differentiate partial domestic travel restrictions from other cases. 1 denotes that travel restrictions were partial and 0 denotes that travel restrictions were not partial (either strict or not implemented). The nature of the travel restrictions is based on our reading of the measures reported by the ACAPS. The interaction of travel and travel_partial allows researchers to create three levels of measures: no domestic travel restrictions (travel_dom=0 and travel_dom_partial=0), partial domestic travel restrictions (travel_dom=1 and travel_dom_partial=1) or strict domestic travel restrictions (travel_dom=1 and travel_dom_partial=0);
+-	curf: binary variable equal to1 if a curfew was implemented and 0 otherwise;
+-	curf_partial: binary flag to differentiate partial curfews from other cases. 1 denotes that the curfew was partial and 0 denotes that the curfew was not partial (either strict or not implemented). The nature of the curfew is based on our reading of the measures reported by the ACAPS. The interaction of curf and curf_partial allows researchers to create three levels of measures: no curfew (curf=0 and curf_partial=0), partial curfew (curf=1 and curf_partial=1) or strict curfew (curf=1 and curf_partial=0);
 - mass: binary variable equal to1 if bans on mass gatherings were implemented and 0 otherwise;
 - mass_partial: binary flag to distinguish localized bans on mass gatherings from other cases. 1 denotes that bans on mass gatherings were partial and 0 denotes that bans on mass gatherings were not partial (either strict or not implemented). The nature of the bans on mass gatherings is based on our reading of the measures reported by the ACAPS. The interaction of mass and mass_partial allows researchers to create three levels of measures: no bans on mass gatherings (mass=0 and mass_partial=0), localized or partial bans (mass=1 and mass_partial=1) or national or strict bans (mass=1 and mass_partial=0);
 - elect: binary variable equal to1 if some elections were postponed and 0 otherwise;

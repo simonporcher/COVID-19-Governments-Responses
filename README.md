@@ -1,17 +1,17 @@
-# GOVERNMENTS' RESPONSES TO COVID-19 - DATASET
+# GOVERNMENTS' RESPONSES TO COVID-19 (response2covid19) - DATASET
 
-Last update: 2020-06-04. 
+Last update: 2020-08-01. 
 
-The dataset tracks governments’ responses to COVID-19 all around the world. The dataset is at the country-level and covers the January-May 2020 period. It tracks 19 measures – 12 public health measures and 7 economic measures – taken by 229 governments. The tracking of the measures allows creating an index of the rigidity of public health measures and an index of economic response to the pandemic. The objective of the dataset is both to inform citizens and to help researchers and governments in fighting the pandemic.
+The dataset tracks governments’ responses to COVID-19 all around the world. The dataset is at the country-level and covers the January-May 2020 period. It tracks 20 measures – 13 public health measures and 7 economic measures – taken by more than 220 governments. The tracking of the measures allows creating an index of the rigidity of public health measures and an index of economic response to the pandemic. The objective of the dataset is both to inform citizens and to help researchers and governments in fighting the pandemic.
 
-The dataset can be downloaded and used freely. Please properly cite the name of the dataset (“Governments’ Responses to COVID-19”) and the reference: Porcher, Simon "A novel dataset of governments' responses to COVID-19 all around the world", Chaire EPPP 2020-03 discussion paper, 2020.
+The dataset can be downloaded and used freely. Please properly cite the name of the dataset (“Governments' responses to COVID-19 (Response2covid19)”) and the reference: Porcher, Simon "A novel dataset of governments' responses to COVID-19 all around the world", Chaire EPPP 2020-03 discussion paper, 2020.
 
 
 ## GENERAL INFORMATION
 
 #### 1.	Title of Dataset: 
 
-Governments' Responses to COVID-19
+Response2covid19
 
 #### 2.	Authors Information
 
@@ -21,9 +21,9 @@ IAE Paris / Sorbonne Business School
 8 bis rue Croix de Jarry 75013 Paris France
 porcher.iae@univ-paris1.fr
 
-Research assistants: Lorena Demichelis (v1 and v3), Léa Reville (v2 and v3), Aziz Goumiri (v3). 
+Research assistants: Lorena Demichelis (v1, v3, v5), Léa Reville (v2, v3 and v4), Aziz Goumiri (v3 and v4). 
 
-#### 3.	Date of data collection: 2020-03-16 to 2020-05-27.
+#### 3.	Date of data collection: 2020-03-16 to 2020-07-31.
 
 #### 4.	Geographic location of data collection: Paris, France.  
 
@@ -39,7 +39,7 @@ The dataset can be used for free. Please properly acknowledge the author's name,
 
 #### 3.	The data is derived from the following sources: 
 
-The coding of public health measures is based on cross-country information reported by the Assessment Capacities Project (ACAPS; https://www.acaps.org/covid19-government-measures-dataset), the International Institute for Democracy and Electoral Assistance (IDEA; https://www.idea.int/publications/catalogue/elections-and-covid-19) for elections and the United Nations Educational Scientific and Cultural Organization (UNESCO; https://en.unesco.org/covid19/educationresponse) for schools closures. For economic measures, the information comes from the IMF (https://www.imf.org/en/Topics/imf-and-covid19/Policy-Responses-to-COVID-19) and the International Growth Centre (https://www.theigc.org/covid-19/).
+The coding of public health measures is based on cross-country information reported by the Assessment Capacities Project (ACAPS), the International Institute for Democracy and Electoral Assistance (IDEA) for elections and the United Nations Educational Scientific and Cultural Organization (UNESCO) for schools closures. For economic measures, the information comes from the IMF and the International Growth Centre.
 
 Detailed country-level sources are  reported here: https://github.com/simonporcher/COVID-19-Governments-Responses/blob/master/Gov_Responses_Sources.xlsx
 
@@ -48,10 +48,11 @@ Detailed country-level sources are  reported here: https://github.com/simonporch
 ## DATA & FILE OVERVIEW
 
 #### 1.	File List: 
-Gov_Responses_Covid19_04Jun.dta, Stata file
-Gov_Responses_Covid19_02Jun.xls, Excel file
-Gov_Responses_Sources.xls, Excel file
-verif.do, Stata do-file updating the dataset from the first version
+Gov_Responses_Covid19_15jul.dta, Stata file
+Gov_Responses_Covid19_15jul.xls, Excel file
+Gov_Responses_Sources_15jul.xls, Excel file
+Data_paper_response2covid19.pdf, Pdf file
+script.do, a Stata file to write the spreadsheet, Do file
 
 #### 2.	Last update:
 
@@ -65,11 +66,11 @@ Data coding is detailed in Porcher, Simon "A novel dataset of governments’ res
 
 #### 2.	Methods for processing the data: 
 
-For all measures, dataset is coded by hand. UNESCO data is merged with our dataset. More information can be found in Porcher, Simon "A novel dataset of governments’ responses to COVID-19 all around the world", Chaire EPPP discussion paper 2020-03, 2020. 
+For all measures, dataset is coded by hand. UNESCO data is merged with our dataset. More information can be found in Porcher, Simon "A novel dataset of governments’ responses to COVID-19 all around the world", Chaire EPPP discussion paper 2020-03, 2020 and in the latest version of the data paper Data_paper_response2covid19.pdf.
 
 #### 3.	Softwares used to collect the data: 
 
-Data was first coded in Excel and then modified in Stata 14 for PC. 
+Data was first coded in Excel and then modified in Stata 14 for PC. The latest versions of the dataset are based on a unique script (Script.do) under Stata.
 
 #### 4.	People involved with sample collection, processing, analysis and/or submission: 
 
@@ -79,15 +80,16 @@ Simon Porcher (principal investigator). Verifications by: Lorena Demichelis, Lé
 
 #### 1.	Number of variables: 
 
-39.
+41.
 
 #### 2.	Number of cases/rows: 
 
-34,121 observations; 229 countries. 
+44,916 observations; 228 countries. 
 
 #### 3.	Variables List: 
 
 - country: name of the country or the territory;
+-  geodi: two-letters country code;
 - iso: three-letters country code;
 - d: date of the observation;
 - cases: number of cases reported on the given day by the European Centre for Disease Prevention and Control;
@@ -113,7 +115,11 @@ Simon Porcher (principal investigator). Verifications by: Lorena Demichelis, Lé
 - testing: binary variable equal to1 if there was a public testing policy and 0 otherwise;
 - testing_narrow:  binary flag to distinguish narrow testing policies from large testing policies. 1 denotes that testing policies were targeted to some individuals, 0 that testing policies were not targeted (either large or not implemented). The nature of the testing policy is based on the information reported in the measures “mass population testing” and “testing policy” in the ACAPS. When the measure was targeted, testing_narrow was coded 1. On the contrary, when the measure was not targeted, testing_narrow was coded 0. The interaction of testing and testing_narrow allows researchers to create three levels of measures: no testing policy (testing=0 and testing_narrow =0), narrow testing policy (testing=1 and testing_narrow =1) or large testing policy (testing=1 and testing_narrow =0);
 - surveillance: binary variable equal to1 if mobile app or bracelet surveillance was implemented and 0 otherwise;
+- surveillance_partial: binary variable equal to1 if the enhanced surveillance is optional or reserved for a category of person (e.g. certain professions or foreigners) and 0 otherwise, based on information in the ACAPS.  When the measure was partial, surveillance_partial was coded 1. On the contrary, when the measure was strict (anybody suspected of having COVID-19), surveillance_partial was coded 0. The interaction of surveillance and surveillance_partial allows researchers to create three levels of measures: no surveillance (surveillance=0 and surveillance_partial =0), partial surveillance (surveillance=1 and surveillance_partial=1) or strict surveillance (surveillance=1 and surveillance_partial =0);
+- masks : binary variable equal to1 if mandates to wear masks in public spaces were implemented and 0 otherwise;
+- masks_partial: binary variable equal to1 if the obligation to wear masks is regional, based on information in the ACAPS.  When the measure was regional, masks_partial was coded 1. On the contrary, when the measure was national, masks_partial was coded 0. The interaction of masks and masks_partial allows researchers to create three levels of measures: no obligations to wear masks (masks=0 and masks_partial =0), regional obligations to wear masks (masks=1 and masks_partial=1) or national obligations to wear masks (masks=1 and masks_partial =0);
 - state: binary variable equal to1 if the state of emergency is declared and 0 otherwise;
+- state_partial: binary variable equal to1 if the state of emergency is declared on a local basis and 0 otherwise, based on information in the ACAPS.  When the measure was local, state_partial was coded 1. On the contrary, when the measure was not localized, state_partial was coded 0. The interaction of state and state_partial allows researchers to create three levels of measures: no state of emergency (state=0 and state_partial =0), partial state of emergency (state=1 and state_partial=1) or national state of emergency (state=1 and state_partial =0);
 - cash: binary variable equal to1 if cash transfers are implemented and 0 otherwise;
 - wage: binary variable equal to1 if wage support is implemented and 0 otherwise;
 - credit: binary variable equal to1 if credit schemes are implemented and 0 otherwise;

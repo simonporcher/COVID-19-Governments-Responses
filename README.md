@@ -2,7 +2,7 @@
 
 Last update: 2020-08-01. 
 
-The dataset tracks governments’ responses to COVID-19 all around the world. The dataset is at the country-level and covers the January-May 2020 period. It tracks 20 measures – 13 public health measures and 7 economic measures – taken by more than 220 governments. The tracking of the measures allows creating an index of the rigidity of public health measures and an index of economic response to the pandemic. The objective of the dataset is both to inform citizens and to help researchers and governments in fighting the pandemic.
+The dataset tracks governments’ responses to COVID-19 all around the world. The dataset is at the country-level and covers the January-October 2020 period. It tracks 20 measures – 13 public health measures and 7 economic measures – taken by more than 220 governments. The tracking of the measures allows creating an index of the rigidity of public health measures and an index of economic response to the pandemic. The objective of the dataset is both to inform citizens and to help researchers and governments in fighting the pandemic.
 
 The dataset can be downloaded and used freely. Please properly cite the name of the dataset (“Governments' responses to COVID-19 (Response2covid19)”) and the reference: Porcher, Simon "A novel dataset of governments' responses to COVID-19 all around the world", Chaire EPPP 2020-03 discussion paper, 2020.
 
@@ -21,9 +21,9 @@ IAE Paris / Sorbonne Business School
 8 bis rue Croix de Jarry 75013 Paris France
 porcher.iae@univ-paris1.fr
 
-Research assistants: Lorena Demichelis (v1, v3, v5), Léa Reville (v2, v3 and v4), Aziz Goumiri (v3 and v4). 
+Research assistants: Lorena Demichelis (v1, v3, v5), Oriane Maille-Lefranc (v6), Léa Reville (v2, v3 and v4), Aziz Goumiri (v3 and v4). 
 
-#### 3.	Date of data collection: 2020-03-16 to 2020-07-31.
+#### 3.	Date of data collection: 2020-03-16 to 2020-11-05.
 
 #### 4.	Geographic location of data collection: Paris, France.  
 
@@ -35,7 +35,7 @@ Research assistants: Lorena Demichelis (v1, v3, v5), Léa Reville (v2, v3 and v4
 
 The dataset can be used for free. Please properly acknowledge the author's name, name of the dataset and the paper presenting the data as Porcher, Simon "A novel dataset of governments' responses to COVID-19 all around the world", Chaire EPPP discussion paper 2020-03. Link: https://www.chaire-eppp.org/a-novel-dataset-of-governments-responses-to-covid-19-all-around-the-world/
 
-#### 2.	Links to other publicly accessible locations of the data: https://www.openicpsr.org/openicpsr/project/119061/version/V4/view
+#### 2.	Links to other publicly accessible locations of the data: https://www.openicpsr.org/openicpsr/project/119061/version/V6/view
 
 #### 3.	The data is derived from the following sources: 
 
@@ -48,15 +48,15 @@ Detailed country-level sources are  reported here: https://github.com/simonporch
 ## DATA & FILE OVERVIEW
 
 #### 1.	File List: 
-Gov_Responses_Covid19_15jul.dta, Stata file
-Gov_Responses_Covid19_15jul.xls, Excel file
+Gov_Responses_Covid19_last.dta, Stata file
+Gov_Responses_Covid19_last.xls, Excel file
 Gov_Responses_Sources_15jul.xls, Excel file
 Data_paper_response2covid19.pdf, Pdf file
 script.do, a Stata file to write the spreadsheet, Do file
 
 #### 2.	Last update:
 
-The updated file is the version of June 04, 2020. Updated version will be uploaded on a monthly basis.
+The updated file is the latest version. Updated version will be uploaded on a monthly basis.
 
 ## METHODOLOGICAL INFORMATION
 
@@ -74,17 +74,17 @@ Data was first coded in Excel and then modified in Stata 14 for PC. The latest v
 
 #### 4.	People involved with sample collection, processing, analysis and/or submission: 
 
-Simon Porcher (principal investigator). Verifications by: Lorena Demichelis, Léa Réville, Aziz Goumiri.
+Simon Porcher (principal investigator). Verifications by: Lorena Demichelis, Oriane Maille-Lefranc, Léa Réville, Aziz Goumiri.
 
 ## DATA-SPECIFIC INFORMATION FOR: Gov_Responses_Covid19_02May.dta
 
 #### 1.	Number of variables: 
 
-41.
+43.
 
 #### 2.	Number of cases/rows: 
 
-44,916 observations; 228 countries. 
+62,700 observations; 228 countries. 
 
 #### 3.	Variables List: 
 

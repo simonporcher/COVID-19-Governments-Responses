@@ -2,6 +2,8 @@
 
 Last update: 2020-08-01. 
 
+Data visualisations are available here: https://response2covid19.org/
+
 The dataset tracks governments’ responses to COVID-19 all around the world. The dataset is at the country-level and covers the January-October 2020 period. It tracks 20 measures – 13 public health measures and 7 economic measures – taken by more than 220 governments. The tracking of the measures allows creating an index of the rigidity of public health measures and an index of economic response to the pandemic. The objective of the dataset is both to inform citizens and to help researchers and governments in fighting the pandemic.
 
 The dataset can be downloaded and used freely. Please properly cite the name of the dataset (“Governments' responses to COVID-19 (Response2covid19)”) and the reference: Porcher, Simon "A novel dataset of governments' responses to COVID-19 all around the world", Chaire EPPP 2020-03 discussion paper, 2020.

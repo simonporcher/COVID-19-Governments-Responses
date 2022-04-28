@@ -22,9 +22,9 @@ IAE Paris / Sorbonne Business School
 8 bis rue Croix de Jarry 75013 Paris France
 porcher.iae@univ-paris1.fr
 
-Research assistants: Lorena Demichelis (v1, v3, v5), Oriane Maille-Lefranc (v6), Léa Reville (v2, v3 and v4), Aziz Goumiri (v3 and v4). 
+Research assistants: Sarah Chauveau (v7), Lorena Demichelis (v1, v3, v5, v7), Oriane Maille-Lefranc (v6, v7), Léa Reville (v2, v3 and v4), Aziz Goumiri (v3 and v4). 
 
-#### 3.	Date of data collection: 2020-03-16 to 2020-11-05.
+#### 3.	Date of data collection: 2020-03-16 to 2021-06-30.
 
 #### 4.	Geographic location of data collection: Paris, France.  
 
@@ -34,9 +34,9 @@ Research assistants: Lorena Demichelis (v1, v3, v5), Oriane Maille-Lefranc (v6),
 
 #### 1.	Licenses/restrictions placed on the data: 
 
-The dataset can be used for free. Please properly acknowledge the author's name, name of the dataset and the paper presenting the data as Porcher, Simon "A novel dataset of governments' responses to COVID-19 all around the world", Chaire EPPP discussion paper 2020-03. Link: https://www.chaire-eppp.org/a-novel-dataset-of-governments-responses-to-covid-19-all-around-the-world/
+The dataset can be used for free. Please properly acknowledge the author's name, name of the dataset and the paper presenting the data as Porcher, Simon "Response2covid19, a dataset of governments' responses to COVID-19 all around the world", Scientific Data, 7, 423, 2020. https://doi.org/10.1038/s41597-020-00757-y
 
-#### 2.	Links to other publicly accessible locations of the data: https://www.openicpsr.org/openicpsr/project/119061/version/V6/view
+#### 2.	Links to other publicly accessible locations of the data: https://www.openicpsr.org/openicpsr/project/119061/version/V7/view
 
 #### 3.	The data is derived from the following sources: 
 
@@ -127,7 +127,6 @@ Simon Porcher (principal investigator). Coding by Sarah Chauveau, Oriane Maille-
 - rate: binary variable equal to1 if the Central Bank lowered the interest rates and 0 otherwise;
 - Rigidity_Public_Health: average of the ten coded public health measures. Public health measures are valued 0.5 if they are localized or partial and 1 if they are national or strict. 0 indicates no measures;
 - Economic_Measures: average of the coded economic measures. 
-
 
 #### 4.	Missing data codes: 
 
